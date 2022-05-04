@@ -1,1 +1,0 @@
-# ITKP1011-Lopputy-
