@@ -2,8 +2,13 @@ body{
     border: 0;
     padding: 0; 
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
+a{
+    font-weight: bold;
+    font-size: 2vh;
+}
 p {
     font-size: 2vh;
 }
@@ -12,10 +17,24 @@ h1 {
     font-size: 4vh;
 }
 
-header{
+header {
     width: 100%;
-    height: 5vh;
-    background-color: #ad0303;
+    height: 3vh;
+    background-color: #f78980;
+    text-align: center;
+    font-size: 1vh;
+}
+
+header a {
+    display: inline-block;
+    margin: 0 1vw;
+    border-right: 0.2vw solid #000000;
+    padding-right: 1vw;
+    font-size: 2vh; /* set the font size for the links in the header */
+}
+
+header a:last-child {
+    border-right: none;
 }
 
 .containerContent{
@@ -23,22 +42,23 @@ header{
     padding-right: 1vw;
 }
 /* YLÄ OSIO */
-.yla{
-    /* height: 60vh; */
-    background-color: aqua;
-}
 
-.yla h1{
-/*     margin-left: 20vw;
- */}
 
 .navLaatikko{
-    background-color: #ad0303;
+    background-color: #f78980;
     width: 25vh;
     height: 35vh;
 
     float: left;
     margin-top: 2vh;
+
+    border-style: dotted;
+    
+    font-size: 1vh;
+}
+
+.navLaatikko li{
+    margin-left: 1vw;
 }
 
 
@@ -51,24 +71,36 @@ header{
    
 }
 
-img{
-    max-height: 512px;
+.keski img{
+    height: 40vh;
+    margin-left: 3vw;
+}
+
+.keski p{
+    margin-left: 17vw;
+    font-weight: 600;
 }
 /*  */
 .ala{
-    height: 30vh;
-    background-color: rgb(84, 82, 86);
+
     font-size: 3vh;
 }
 /*  */
 footer{
     width: 100%;
-    height: 10vh;
-    background-color: #ad0303;
-    display: flex;
+    height: 5vh;
+    background-color: #f78980;
+    padding-top: 1vh;
+    font-size: 3vh;
+    
 }
 
-.nimi{
-    margin-left: 65vw;
-    font-weight: 1000;
+.footerLinkki {
+
+}
+
+.nimi {
+    font-weight: bolder;
+    float: right;
+  
 }
