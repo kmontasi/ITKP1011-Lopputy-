@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fi" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi">
+
+<head>
+<!-- 	<meta charset="utf-8" />
+	 Älä muuta tai poista seuraavia script-elementtejä
+	Kurssin oma tarkistin tarkistaa sivusi kieliopin ja harjoitustyöhön liittyviä 
+	ongelmia ja ilmoittaa virheistä selaimen konsolissa. Tämä ei kuitenkaan korvaa kurssin
+	varsinaista harjoitustyötarkistuskonetta. Konsolin ja virheilmoitukset 
+	saat esille seuraavasti:
+
+	Firefox: SHIFT+CTRL+K tai Tools|Web developer|Web console 
+
+	Chrome: SHIFT + CTRL + J tai Command + Option + J (Mac) tai ...|More tools|developer tools|console
+
+	Kaikki virheilmoitukset taltioidaan myös kurssin omaan tietokantaan ja niitä 
+	hyödynnetään kurssimateriaalin ja tarkistimien jatkokehityksessä. --> 
+	<script src="https://appro.mit.jyu.fi/tools/htmlinspector/html-inspector.js"></script>
+	<script src="https://appro.mit.jyu.fi/tools/itkp1011/itkp1011.js"></script>
+	<!-- tästä eteenpäin voit muutella vapaasti -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<title>sed - Taso 1</title>
+</head>
+
+
+	<header>
+		<a href="https://www.jyu.fi/">Jyväskylän yliopisto</a>
+		<a href="https://www.jyu.fi/it/">Informaatioteknologian tiedekunta</a>
+		<a href="https://www.jyu.fi/it/fi/opiskelu/kandidaatti-ja-maisteriohjelmat/tietotekniikka">Tietotekniikan oppiaine</a>
+		<a href="https://appro.mit.jyu.fi/itkp1011">ITKP1011</a>
+	</header>
+	
+
+	<div class="containerContent">
+
+		<div class="yla">
+			<div class="navLaatikko">
+				<nav class="navdir">
+					●<a href="#arcu"> arcu</a>
+					<br>
+					<ul>
+						<li><a href="#cras"> cras</a></li>
+						<li><a href="#dui"> dui</a></li>
+						<li><a href="#fusce"> fusce</a></li>
+					</ul>
+					<br>
+					●<a href="#porttitor"> porttitor</a>
+					<br>
+					●<a href="#sed"> sed</a>
+					<br>
+					<ul>
+						<li><a href="#mollis"> mollis</a></li>
+						<li><a href="#nec"> nec</a></li>
+					</ul>
+				  </nav>
+			</div>
+			
+	
+
+			<h1>
+				sed - Taso 1
+			</h1>
+			<p>
+				Nunc elit lectus, aliquet id accumsan eu, auctor scelerisque mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse a ultrices ligula. Donec rutrum enim a nibh vestibulum, a hendrerit libero tempor. Donec nec tellus in erat aliquet consequat non in ipsum. Maecenas vitae erat vitae lorem dapibus consequat. Pellentesque vitae lacinia leo. Mauris sagittis, ex a cursus viverra, ante dolor bibendum nibh, eget ultricies metus erat in quam.
+
+			</p>
+			<p>
+				Donec ullamcorper fringilla aliquam. Integer lobortis odio non nibh consequat semper non non libero. Praesent mi dolor, efficitur vitae massa ac, dignissim laoreet eros. Vivamus ullamcorper erat libero, quis mollis mi pulvinar eu. Ut laoreet malesuada tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin posuere sollicitudin venenatis. In et vestibulum nisi. Nam imperdiet tincidunt dolor. Donec imperdiet in sem eget vehicula. Nulla blandit blandit mollis. Mauris vulputate a ipsum sit amet venenatis. Aliquam tincidunt, ipsum id ullamcorper vestibulum, elit diam tincidunt mauris, vitae dignissim est risus quis tortor. Sed tempor rhoncus eros, non condimentum lorem commodo porttitor. Praesent quis nisi sit amet diam dictum ullamcorper.
+			</p>
+			<p>
+				Aenean placerat aliquet pulvinar. Etiam quis viverra lectus. Sed nec consectetur risus, euismod pellentesque sapien. Maecenas at fringilla dui, in auctor tortor. Duis in efficitur risus, a pharetra velit. Nunc tristique lectus molestie gravida interdum. Etiam sed pharetra magna. In rhoncus neque non leo convallis faucibus.
+			</p>
+			<p>
+				Ut ac egestas erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean dolor turpis, hendrerit eget luctus eget, accumsan in libero. Morbi nibh arcu, imperdiet vel orci eu, sagittis dapibus nulla. Quisque id diam eu nulla malesuada elementum. Cras ac justo lectus. Sed ornare commodo turpis ut aliquam. Etiam a cursus diam, at imperdiet mauris. Quisque nec mauris imperdiet, eleifend orci quis, convallis nunc. Suspendisse tempor tellus eu dictum tristique. Aenean nec justo at diam ullamcorper tincidunt. Pellentesque vulputate massa eget posuere gravida. Integer tempus odio sit amet quam interdum, id finibus libero tempor.
+			</p>
+
+		</div>
+		
+
+		<div class="keski">
+
+				
+			
+
+			<table>
+				<caption>Mallitaulukko</caption>
+
+				<tr>
+					<th>ots 1</th>
+					<td>0</td>
+					<td>1</td>
+					<td>4</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<th>ots 2</th>
+					<td>1</td>
+					<td>4</td>
+					<td>9</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<th>ots 3</th>
+					<td>4</td>
+					<td>9</td>
+					<td>16</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<th>ots 4</th>
+					<td>9</td>
+					<td>16</td>
+					<td>25</td>
+					<td>36</td>
+				</tr>
+				<tr>
+					<th>ots 5</th>
+					<td>16</td>
+					<td>25</td>
+					<td>36</td>
+					<td>49</td>
+				</tr>
+				<tr>
+					<th>ots 6</th>
+					<td>25</td>
+					<td>36</td>
+					<td>49</td>
+					<td>64</td>
+				</tr>
+				<tr>
+					<th>ots 7</th>
+					<td>36</td>
+					<td>49</td>
+					<td>64</td>
+					<td>81</td>
+				</tr>
+				
+			</table>
+			
+			
+		</div>
+
+		<div class="ala">
+			<p>
+				Nam ut porta dui. Vivamus id erat tincidunt, tempor dolor sed, elementum dolor. Pellentesque nulla velit, laoreet id leo in, porta tristique enim. Vivamus nec semper justo. Sed vitae sagittis metus. Etiam non magna in nisi viverra faucibus. Donec dignissim eros id tortor rutrum blandit. Phasellus a molestie dui. Praesent elit nunc, dignissim ac arcu nec, pulvinar auctor leo. Nulla semper justo eu ullamcorper maximus. Pellentesque rhoncus sollicitudin maximus.
+			</p>
+			<p>
+				Nam rhoncus sodales ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque malesuada pretium lacus a tristique. Proin dignissim velit a lorem gravida luctus. Nulla facilisi. Mauris tempus eros quis elit tincidunt, laoreet ultrices ipsum mattis. Praesent felis lacus, ornare quis faucibus ut, elementum non orci.
+			</p>
+		</div>
+	
+
+	</div>
+		
+
+	<footer>
+		<div class="nimi">
+			&copy KHONDKER MONTASIRZZAMAN
+		</div>
+		<a  class="footerLinkki"href="../">ITKP1011 Harjoitustyö </a>
+	</footer>
+
+
+</html>

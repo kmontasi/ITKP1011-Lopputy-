@@ -1,3 +1,8 @@
+*{
+    font-family: Arial;
+    font: Arial;
+}
+
 body{
     border: 0;
     padding: 0; 
@@ -71,15 +76,23 @@ header a:last-child {
    
 }
 
-.keski img{
-    height: 40vh;
-    margin-left: 3vw;
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 10vw;
+    height: 15vh;
+    font-size: 1vw;
 }
 
-.keski p{
-    margin-left: 17vw;
-    font-weight: 600;
+th,
+td {
+    border: 1px dotted black;
+    
+    text-align: center;
 }
+
+
+
 /*  */
 .ala{
 
